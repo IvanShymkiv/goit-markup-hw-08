@@ -1,0 +1,38 @@
+.about {
+    text-align: left;
+  }
+  
+  .about__container {
+    display: flex;
+    gap: 30px;  
+   }
+  
+  .about__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  
+  .about__block {
+    display: flex;
+    background-color: #f5f4fa;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .about__preference {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  
+  .about__txt {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--light-txt-cl);
+    margin-top: 10px;
+  }

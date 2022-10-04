@@ -1,0 +1,45 @@
+.team {
+    background-color: #f5f4fa;
+  }
+  
+  .team__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+  }
+  
+  .team__container {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+  }
+  
+  .team__card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--other-txt-cl);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .team__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .team__expert {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  
+  .team__profil {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+    color: var(--light-txt-cl);
+    margin-bottom: 16px;
+  }
+  

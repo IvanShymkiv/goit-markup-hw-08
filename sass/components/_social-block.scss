@@ -1,0 +1,28 @@
+.social-block {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--other-txt-cl);
+    border-radius: 50%;
+    color: var(--gray-icon-cl);
+    transition: background-color var(--anim-hover), color var(--anim-hover);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--accent-txt-cl);
+        color: var(--other-txt-cl);
+    }
+  }
+
+       
+  .social__icon {
+    fill: currentColor;
+  }

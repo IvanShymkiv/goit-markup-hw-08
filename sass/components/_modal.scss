@@ -1,0 +1,213 @@
+.beckdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    transition: opacity var(--anim-hover);
+  }
+  
+  .beckdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 40%;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    width: 528px;
+    background: var(--other-txt-cl);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--anim-hover);
+    padding: 40px;
+  }
+  
+  .modal__btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--other-txt-cl);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  
+    transition: fill var(--anim-hover);
+  
+    cursor: pointer;
+  
+    &:hover,
+    &:focus {
+      fill: var(--accent-txt-cl);
+    }
+  }
+  
+    
+    
+  .modal__form-title {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;  
+  }
+  
+  .register__form-field {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .register__form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 48px;
+    padding-right: 48px;
+  
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    transition: border-color var(--anim-hover);
+  
+    &:focus,
+    &:hover,
+    &:not(:placeholder-shown) {
+      border-color: var(--accent-txt-cl);
+    }
+    
+    &::placeholder {
+      opacity: 0;
+      transition: opacity var(--anim-hover);
+    }
+  
+    &:focus::placeholder {
+      opacity: 1;
+    }
+
+    &:focus ~ .register__form-icon, 
+    &:hover ~ .register__form-icon {
+    fill: var(--accent-txt-cl);
+  }
+  }
+  
+   
+  
+    
+  .register__form-label {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--light-txt-cl);
+    text-align: left;
+    margin-bottom: 4px;
+  }
+  
+  .register__form-icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+  
+    transition: fill var(--anim-hover);
+  }
+  
+    .register__form-message {
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+  
+    font-size: 14px;
+  
+    resize: none;
+    outline: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  
+    transition: border-color var(--anim-hover);
+  
+    &::placeholder {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+      
+        &:hover,
+        &:focus,
+        &:not(:placeholder-shown) {
+          border-color: var(--accent-txt-cl);
+        }
+  }
+  
+ 
+  
+  .register__form-field:last-child {
+    margin-bottom: 20px;
+  }
+  
+  .register__form-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8.38px;
+  
+    margin-bottom: 30px;
+  }
+  
+  .icon__checked {
+    opacity: 0;
+    fill: var(--accent-txt-cl);
+    transition: opacity var(--anim-hover);
+  }
+  
+  .register__form-checkbox:checked + .register__form-icons .icon__checked {
+    opacity: 1;
+  }
+  .icon__unchecked {
+    transition: opacity var(--anim-hover);
+  }
+  
+  .register__form-checkbox:checked + .register__form-icons .icon__unchecked {
+    opacity: 0;
+  }
+  
+  .register__form-checkbox:focus + .register__form-icons {
+    outline-offset: 1px;
+  }
+  
+  .register__form-desc {
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--light-txt-cl);
+    user-select: none;
+  }
+  
+  .register__form-link {
+    color: var(--accent-txt-cl);
+  }
+  
+  .register__form__btn { 
+    padding: 10px 52px;
+   
+  }
