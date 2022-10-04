@@ -1,16 +1,31 @@
 .about {
     text-align: left;
+    @include section;
+
+    // desktop styles 1200
+    @media screen and (min-width: 1200px) {
+    @include section(94px);
+    }
   }
   
   .about__container {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;  
    }
   
   .about__item {
+    
+     // tablet styles 768
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+    }
+  
+    // desktop styles 1200
+    @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 90px) / 4);
   }
-  
+}
   .about__block {
     display: flex;
     background-color: #f5f4fa;
