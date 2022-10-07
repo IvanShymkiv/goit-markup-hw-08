@@ -2,16 +2,47 @@
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../imeges/fon-img/Img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  
     background-color: #2f303a;
     padding-top: 118px;
     padding-bottom: 118px;
+    
+    background-image: linear-gradient(to right,
+     rgb(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../imeges/fon-img/img_mob-@1x.png);
 
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)),  url(../imeges/fon-img/img_mob-@2x.png);
+
+    }
+     
+    // tablet styles 768
+    @media screen and (min-width: 481px) {
+      background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), 
+      rgba(47, 48, 58, 0.4)), url(../imeges/fon-img/img_tab-@1x.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
+      (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), url(../imeges/fon-img/img_tab-@2x.png);
+    }
+    }
+
+    // desktop styles 1200
+    @media screen and (min-width: 769px) {
+        background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), url(../imeges/fon-img/img_desc-@1x.png);
+  
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), 
+          rgba(47, 48, 58, 0.4)), url(../imeges/fon-img/img_desc-@2x.png);
+      }
+      
      // tablet styles 768
      @media screen and (min-width: 768px) {
       max-width: 768px;
@@ -25,23 +56,26 @@
   }
 
   }
-  
+}
   .hero__title {
     font-weight: 900;
     font-size: 26px;
-    line-height: calc(42 / 4426);
+    line-height: calc(42 / 26);
     letter-spacing: 0.06em;
     color: var(--other-txt-cl);
     text-transform: uppercase;
-    margin-bottom: 30px;
-    width: 696px;
+    width: 360px;
+    height: auto;
+
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 
     // desktop styles 1200
     @media screen and (min-width: 1200px) {
       font-size: 44px;
-      line-height: calc(60 / 44); 
+      line-height: calc(60 / 44);
+      width: 696px; 
     }
   }
   

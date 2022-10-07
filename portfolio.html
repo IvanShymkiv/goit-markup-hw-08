@@ -41,8 +41,8 @@
           </ul>
         </nav>
         <ul class="header-group list">
-          <li>
-            <a class="header__contacts" href="mailto:info@devstudio.com">
+          <li class="header__email">
+            <a class="header__contacts link" href="mailto:info@devstudio.com">
               <svg class="header__icon" width="16" height="12">
                 <use href="./imeges/icons.svg#icon-envelope"></use>
               </svg>
@@ -50,7 +50,7 @@
             >
           </li>
           <li>
-            <a class="header__contacts" href="tel:+380961111111">
+            <a class="header__contacts link" href="tel:+380961111111">
               <svg class="header__icon" width="10" height="16">
                 <use href="./imeges/icons.svg#icon-smartphone"></use>
               </svg>
@@ -58,6 +58,16 @@
             >
           </li>
         </ul>
+        <button 
+        class="menu-btn js-open-menu" 
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        >
+          <svg class="burger__icon" width="40" height="40">
+            <use href="./imeges/icons.svg#icon-burger_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>

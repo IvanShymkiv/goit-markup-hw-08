@@ -1,6 +1,11 @@
 
 .activity {
     padding-top: 0px;
+
+       // tablet styles 768
+    @media screen and (max-width: 1199px) {
+      display: none;
+}
   }
   
   .activity__title {
@@ -42,3 +47,11 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
   }
+
+
+
+
+
+
+
+ 

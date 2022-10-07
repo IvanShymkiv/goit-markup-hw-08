@@ -2,11 +2,7 @@
     background-color: #f5f4fa;
     @include section;
 
-     // tablet styles 768
-    @media screen and (min-width: 768px) {
-    }
-
-    // desktop styles 1200
+       // desktop styles 1200
     @media screen and (min-width: 1200px) {
     @include section(94px);
   }
@@ -49,15 +45,20 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    //        // tablet styles 768
-    //    @media screen and (min-width: 768px) {
-    //     flex-basis: calc((100% - 30px) / 2);
-    //   }
+    .team__img {
+      max-width: 100%;
+      height: auto;
+    }
+
+           // tablet styles 768
+       @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+      }
   
-    //   // desktop styles 1200
-    //   @media screen and (min-width: 1200px) {
-    //     flex-basis: calc((100% - 90px) / 4);
-    // }    
+      // desktop styles 1200
+      @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+    }    
   }
   
   .team__expert {
