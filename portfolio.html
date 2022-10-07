@@ -77,6 +77,9 @@
           <h1 class="visually-hidden">Projects</h1>
           <ul class="filtrs list">
             <li class="filtrs__item">
+              <li class="filtrs__item">
+                <button class="filtrs__btn" type="button">Усі</button>
+              </li>
               <button class="filtrs__btn" type="button">Веб-сайти</button>
             </li>
             <li class="filtrs__item">
@@ -87,10 +90,7 @@
             </li>
             <li class="filtrs__item">
               <button class="filtrs__btn" type="button">Маркетинг</button>
-            </li>
-            <li class="filtrs__item">
-              <button class="filtrs__btn" type="button">Усі</button>
-            </li>
+            </li>            
           </ul>
           <ul class="portfolio list">
             <li class="portfolio__item">
@@ -318,6 +318,7 @@
 
     <footer class="footer">
       <div class="footer__container container">
+        <div class="footer-tablet">
         <div class="contacts-group">
           <a class="logo" href="./index.html">Web<span class="logo__light">Studio</span> </a>
           <address class="address" style="font-style: normal">
@@ -397,8 +398,9 @@
                 </svg>
               </a>
             </li>
-          </ul>
+          </ul> 
         </div>
+      </div>
         <div>
           <p class="footer__email-title">Підпишіться на розсилку</p>
           <div class="footer__form">
@@ -421,5 +423,86 @@
         </div>
       </div>
     </footer>
+    <!-- Menu mobile -->
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg class="menu__icon" 
+        width="40" height="40">
+          <use href="./imeges/icons.svg#icon-close_menu"></use>
+        </svg>
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    
+      <ul class="menu__nav list">
+        <li class="menu__item">
+          <a class="menu__link link" href="./index.html">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link menu__link--current" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="./index.html">Контакти</a>
+        </li>      
+      </ul>
+      <ul class="menu__contacts list">
+        <li >
+          <a class="menu__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li>
+          <a class="menu__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="menu__social-list list">
+        <li class="menu_social-item">
+          <a
+          class="menu__social-link link"
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+           >Instagram</a>           
+        </li>
+        <li class="menu_social-item">
+          <a
+          class="menu__social-link link"
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="twitter"
+          >Twitter</a>
+        </li>
+        <li class="menu_social-item">
+          <a
+          class="menu__social-link link"
+          href="https://facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="facebook"
+          >Facebook</a>
+        </li>
+        <li class="menu_social-item">
+          <a
+          class="menu__social-link link"
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="linkedin"
+          >Linkedin</a>
+        </li>
+      </ul>
+       </div>
+        <!-- Mobile menu -->
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
