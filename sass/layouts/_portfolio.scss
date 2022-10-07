@@ -8,6 +8,7 @@
 .portfolio__item {
   margin-right: 30px;
   margin-bottom: 30px;
+  gap: 30px;
 
   // tablet styles 768
   @media screen and (min-width: 768px) {
@@ -21,13 +22,13 @@
 }
 }
 
-.portfolio__item:nth-child(3n) {
-  margin-right: 0;
-}
+// .portfolio__item:nth-child(3n) {
+//   margin-right: 0;
+// }
 
-.portfolio__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
+// .portfolio__item:nth-last-child(-n + 3) {
+//   margin-bottom: 0;
+// }
 
 .portfolio__link {
   display: block;
