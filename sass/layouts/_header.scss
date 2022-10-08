@@ -1,11 +1,14 @@
 .header {
   text-align: left;
+  
 }
 
 .header__container {
   display: flex;
   border-bottom: 1px solid #ececec;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header__logo {
@@ -106,4 +109,5 @@
 
 .header__icon {
   fill: currentColor;
+  
 }
