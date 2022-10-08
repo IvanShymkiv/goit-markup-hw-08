@@ -1,11 +1,10 @@
 
 .activity {
-    @include section;
-    padding-top: 0px;
+  @include section(94px);
+  padding-top: 0px;
 
        // desctop styles 1200
     @media screen and (max-width: 1199px) {
-      @include section(94px);
       display: none;
 }
   }
