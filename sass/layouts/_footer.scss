@@ -50,9 +50,11 @@
 
 .contacts-group {
   margin-bottom: 60px;
+
   // desktop styles 1200
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    margin-bottom: 0px;
   }
 
 }
@@ -103,6 +105,10 @@
 
 .footer-social-icons {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 786px) {
+    margin-bottom: 0px;
+  }
  
 }
 
