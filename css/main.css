@@ -849,6 +849,11 @@ img {
   text-transform: uppercase;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .about__preference {
+    text-align: left;
+  }
+}
 
 .about__txt {
   font-size: 14px;
