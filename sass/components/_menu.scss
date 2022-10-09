@@ -130,13 +130,17 @@
 
 .menu__social-list {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
 
    
 }
 
     .menu__social-link {
+
     font-weight: 500;
     font-size: 18px;
     line-height: calc(22 / 18);
