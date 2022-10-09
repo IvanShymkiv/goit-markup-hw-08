@@ -602,12 +602,15 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .header__logo {
   color: var(--main-txt-cl);
+}
+
+.logo-heder {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .nav {
@@ -1522,6 +1525,12 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__name-block--first-child {
+    padding-bottom: 56px;
+  }
 }
 
 .portfolio__name {

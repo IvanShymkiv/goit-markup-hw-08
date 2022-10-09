@@ -7,12 +7,17 @@
   display: flex;
   border-bottom: 1px solid #ececec;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  
 }
 
 .header__logo {
   color: var(--main-txt-cl);
+  
+}
+
+.logo-heder {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .nav {

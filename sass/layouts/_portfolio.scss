@@ -31,6 +31,7 @@
 .portfolio__item {
   max-width: 100%;
   height: auto;
+ 
   
       
 
@@ -100,8 +101,16 @@
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;  
 }
+
+.portfolio__name-block--first-child {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }  
+  
+}
+
 
 .portfolio__name {
   color: var(--main-txt-cl);
@@ -118,3 +127,4 @@
   color: var(--light-txt-cl);
   margin-top: 4px;
 }
+
